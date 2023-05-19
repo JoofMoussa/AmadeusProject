@@ -1,0 +1,33 @@
+{% load static %}
+<div id="sidebar-wrapper">
+  <a id="menu-close" href="#" class="close toggle"><i class="fa fa-times" aria-hidden="true"></i></a>
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand"> <a href="">
+      <!-- <img src="{% static 'heartcare/images/footer-logo.png' %}" alt=""> -->
+      <h6 class="masterTitle"><span class="text-success">Bit</span><span class="text-info">Masters</span></h6>
+    </a> </li>
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">Vols <span class="fa fa-angle-down"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'faqs' %}">Faqs</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">Locations Autos <span class="fa fa-angle-down"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'faqs' %}">Faqs</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">Hotels <span class="fa fa-angle-down"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'faqs' %}">Faqs</a></li>
+      </ul>
+    </li>
+    <li><a href="{% url 'contact' %}">Contacts</a></li>
+  </ul>
+</div>
